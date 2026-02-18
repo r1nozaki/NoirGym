@@ -33,7 +33,12 @@ const FooterTop = () => {
 					<h2 className='mb-4 text-lg font-bold text-white'>Контакти</h2>
 					<ul>
 						<li className='text-white'>
-							<a href='tel:+380672715615'>+380-67-271-56-15</a>
+							<a
+								href='tel:+380672715615'
+								className='transition-colors duration-300 hover:text-[#e8a21a]'
+							>
+								+380-67-271-56-15
+							</a>
 						</li>
 					</ul>
 				</div>
