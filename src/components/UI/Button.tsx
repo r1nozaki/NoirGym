@@ -30,7 +30,7 @@ const Button = ({
 	return (
 		<button
 			type='button'
-			className={`w-71 h-12 text-white bg-[#e8a21a] border border-[#e8a21a] rounded-[40px] transition-all duration-300 hover:bg-transparent hover:scale-105 cursor-pointer ${className}`}
+			className={`w-71 h-12 text-black bg-[#e8a21a] border border-[#e8a21a] rounded-[40px] transition-all duration-300 hover:bg-transparent hover:scale-105 hover:text-white cursor-pointer ${className}`}
 			onClick={handleClick}
 			{...rest}
 		>
