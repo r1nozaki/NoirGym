@@ -22,7 +22,7 @@ const AboutContent = () => {
 					text='Більше про нас'
 					link='/about-us'
 				/>
-				<div className='flex w-full border-2 border-[#e8a21a] mt-15'>
+				<div className='flex w-full mt-15'>
 					<AboutMetricItem
 						title='Загальна площа'
 						metric='м2'

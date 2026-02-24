@@ -8,7 +8,7 @@ type AboutMetricProps = {
 
 const AboutMetricItem = ({ children, title, metric }: AboutMetricProps) => {
 	return (
-		<div className='flex flex-col p-5 justify-center  w-1/3 gap-2 not-last:border-r-2 border-[#e8a21a]'>
+		<div className='flex flex-col p-5 justify-center  w-1/3 gap-2 '>
 			<div className='flex items-center gap-1 text-2xl font-bold'>
 				{children} <span className='text-[#e8a21a]'>{metric}</span>
 			</div>

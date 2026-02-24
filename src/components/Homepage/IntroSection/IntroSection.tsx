@@ -5,7 +5,7 @@ import Button from '../../UI/Button'
 const IntroSection = () => {
 	return (
 		<section className='flex justify-between w-full px-20 pt-10'>
-			<div className='flex flex-col items-start gap-4'>
+			<div className='flex flex-col items-start gap-6 pt-16'>
 				<h1 className='text-4xl text-[#e8a21a] uppercase font-bold'>
 					Будуй тіло разом з NOIR GYM
 				</h1>

@@ -15,7 +15,7 @@ const Header = () => {
 			<nav>
 				<HeaderMenu />
 			</nav>
-			<div className='w-50'>
+			<div className='w-40'>
 				<HeaderJoinBtn
 					isOpenModal={isOpenModal}
 					handleModel={() => setIsOpenModal(!isOpenModal)}

@@ -63,7 +63,6 @@ const StyledWrapper = styled.div`
 		border: 1px solid rgba(255, 255, 255, 0.08);
 		box-shadow: -10px 20px 40px rgba(0, 0, 0, 0.6);
 		animation: floatOne 5s ease-in-out infinite;
-		cursor: pointer;
 	}
 
 	.card::before {
@@ -181,9 +180,14 @@ const StyledWrapper = styled.div`
 		background: #e8a21a;
 		color: #000;
 		text-align: center;
-		font-weight: 700;
+		font-weight: 500;
 		font-size: 14px;
 		text-transform: uppercase;
+		cursor: pointer;
+	}
+
+	.cardDetailsButton:hover {
+		background-color: #cf9017;
 	}
 
 	@keyframes floatOne {
