@@ -187,7 +187,8 @@ const StyledWrapper = styled.div`
 	}
 
 	.cardDetailsButton:hover {
-		background-color: #cf9017;
+		background-color: #facc15;
+		transition: all 0.3s ease;
 	}
 
 	@keyframes floatOne {

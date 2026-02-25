@@ -1,7 +1,4 @@
-export interface NavigationItem {
-	path: string
-	label: string
-}
+import type { NavigationItem } from '../types/NavigationItem'
 
 export const NAV_ITEMS: NavigationItem[] = [
 	{ path: '/services', label: 'Послуги' },
