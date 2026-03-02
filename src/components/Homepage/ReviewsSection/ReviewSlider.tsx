@@ -10,7 +10,6 @@ import 'slick-carousel/slick/slick-theme.css'
 
 function ReviewsSlider() {
 	const settings: Settings = {
-		dots: true,
 		infinite: true,
 		slidesToShow: 3,
 		slidesToScroll: 3,

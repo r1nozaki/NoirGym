@@ -4,6 +4,7 @@ import './globals.css'
 import Header from '@/src/components/layout/Header/Header'
 import Footer from '@/src/components/layout/Footer/Footer'
 import ScrollToTop from '@/src/helpers/ScrollToTop'
+import ScrollProgress from '@/src/components/UI/ScrollProgress'
 
 const roboto = Roboto({
 	weight: ['400', '500', '700'],
@@ -25,6 +26,7 @@ export default function RootLayout({
 		<html lang='en'>
 			<body className={`${roboto.variable}  antialiased`}>
 				<ScrollToTop />
+				<ScrollProgress />
 				<Header />
 				<main className='min-h-screen bg-[#121214] pt-18'>{children}</main>
 				<Footer />
