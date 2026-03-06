@@ -1,3 +1,4 @@
+import InstagramBanner from '@/src/components/common/InstagramBanner'
 import AboutSection from '@/src/components/Homepage/AboutSection/AboutSection'
 import IntroSection from '@/src/components/Homepage/IntroSection/IntroSection'
 import ReviewsSection from '@/src/components/Homepage/ReviewsSection/ReviewsSection'
@@ -12,6 +13,7 @@ function HomePage() {
 			<AboutSection />
 			<ServicesSection />
 			<ReviewsSection />
+			<InstagramBanner />
 		</>
 	)
 }
