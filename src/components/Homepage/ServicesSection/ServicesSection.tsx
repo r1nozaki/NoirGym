@@ -4,9 +4,9 @@ import Button from '../../UI/Button'
 
 const ServicesSection = () => {
 	return (
-		<section className='px-20 py-15 bg-[#1A1A1A]'>
+		<section className='px-20 py-15'>
 			<Title title='Послуги' />
-			<ServiceList />
+			<ServiceList countServ={3} />
 			<Button
 				className='mt-10 w-full font-bold'
 				text='Більше послуг'

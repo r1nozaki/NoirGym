@@ -11,9 +11,9 @@ function HomePage() {
 			<IntroSection />
 			<SubscriptionSection />
 			<AboutSection />
+			<InstagramBanner />
 			<ServicesSection />
 			<ReviewsSection />
-			<InstagramBanner />
 		</>
 	)
 }

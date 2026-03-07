@@ -1,10 +1,10 @@
 import ServiceCard from './ServiceCard'
 import { SERVICE_ITEMS } from '@/src/constants/services'
 
-const ServiceList = () => {
+const ServiceList = ({ countServ }: { countServ: number }) => {
 	return (
 		<div className='grid grid-cols-1 md:grid-cols-3 gap-5 items-center'>
-			{SERVICE_ITEMS.slice(0, 3).map(service => (
+			{SERVICE_ITEMS.slice(0, countServ).map(service => (
 				<ServiceCard
 					key={service.id}
 					id={service.id}
