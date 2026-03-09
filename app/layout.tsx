@@ -1,10 +1,13 @@
 import type { Metadata } from 'next'
-import { Roboto } from 'next/font/google'
+import { Roboto, Inter } from 'next/font/google'
 import './globals.css'
 import Header from '@/src/components/layout/Header/Header'
 import Footer from '@/src/components/layout/Footer/Footer'
 import ScrollToTop from '@/src/helpers/ScrollToTop'
 import ScrollProgress from '@/src/components/UI/ScrollProgress'
+import { cn } from "@/lib/utils";
+
+const inter = Inter({subsets:['latin'],variable:'--font-sans'});
 
 const roboto = Roboto({
 	weight: ['400', '500', '700'],
@@ -23,7 +26,7 @@ export default function RootLayout({
 	children: React.ReactNode
 }>) {
 	return (
-		<html lang='en'>
+		<html lang='en' className={cn("font-sans", inter.variable)}>
 			<body className={`${roboto.variable}  antialiased`}>
 				<ScrollToTop />
 				<ScrollProgress />

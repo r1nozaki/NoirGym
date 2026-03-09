@@ -1,5 +1,7 @@
+import ContactsSection from '@/src/components/ContactsPage/ContactsSection'
+
 const ContactsPage = () => {
-	return <div>Contacts</div>
+	return <ContactsSection />
 }
 
 export default ContactsPage
