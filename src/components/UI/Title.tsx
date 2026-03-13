@@ -1,15 +1,18 @@
 interface TitleProps {
-	title: string
-	className?: string
+	mainText: string
+	secondText: string
 }
 
-const Title = ({ title, className }: TitleProps) => {
+const Title = ({ mainText, secondText }: TitleProps) => {
 	return (
-		<h3
-			className={`text-2xl font-bold text-[#e8a21a] pb-1 border-b border-b-[#e8a21a] mb-10 ${className}`}
-		>
-			{title}
-		</h3>
+		<div className='flex flex-col items-center mb-24 text-center z-10'>
+			<h1 className='text-5xl md:text-6xl text-white uppercase font-black mb-4 tracking-tighter'>
+				{mainText} <span className='text-[#e8a21a]'>Noir Gym</span>
+			</h1>
+			<p className='text-white/50 font-medium text-lg uppercase tracking-[0.3em] max-w-xl'>
+				{secondText}
+			</p>
+		</div>
 	)
 }
 

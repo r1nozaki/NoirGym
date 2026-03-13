@@ -1,5 +1,5 @@
 import ServiceList from './ServiceList'
-import Title from '../../UI/Title'
+import Title from '../../UI/Subtitle'
 import Button from '../../UI/Button'
 
 const ServicesSection = () => {

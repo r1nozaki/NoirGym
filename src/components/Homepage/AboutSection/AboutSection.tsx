@@ -1,5 +1,5 @@
 import AboutContent from './AboutContent'
-import Title from '../../UI/Title'
+import Title from '../../UI/Subtitle'
 
 const AboutSection = () => {
 	return (

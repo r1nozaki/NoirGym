@@ -1,17 +1,14 @@
+import Title from '../UI/Title'
 import ContactForm from './ContactForm'
 import ContactsContent from './ContactsContent'
 
 const ContactsSection = () => {
 	return (
 		<section className='px-20 py-15 flex flex-col items-center gap-5'>
-			<div className='flex flex-col items-center mb-24 text-center z-10'>
-				<h1 className='text-5xl md:text-6xl text-white uppercase font-black mb-4 tracking-tighter'>
-					Знайди свій <span className='text-[#e8a21a]'>Noir Gym</span>
-				</h1>
-				<p className='text-white/50 font-medium text-lg uppercase tracking-[0.3em] max-w-xl'>
-					Ми чекаємо на тебе в самому серці міста
-				</p>
-			</div>
+			<Title
+				mainText='Знайди свій'
+				secondText='Ми чекаємо на тебе в самому серці міста'
+			/>
 			<div className='w-full flex flex-col items-center gap-10'>
 				<ContactsContent />
 				<ContactForm />

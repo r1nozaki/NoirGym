@@ -1,5 +1,5 @@
 import ReviewsSlider from './ReviewSlider'
-import Title from '../../UI/Title'
+import Title from '../../UI/Subtitle'
 
 const ReviewsSection = () => {
 	return (

@@ -1,5 +1,5 @@
 import SubscriptionCards from '../../UI/SubscriptionCards'
-import Title from '../../UI/Title'
+import Title from '../../UI/Subtitle'
 import SubscriptionContent from './SubscriptionContent'
 const SubscriptionSection = () => {
 	return (
