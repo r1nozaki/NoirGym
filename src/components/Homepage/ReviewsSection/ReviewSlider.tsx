@@ -7,8 +7,10 @@ import { REVIEWS_ITEMS } from '@/src/constants/reviews'
 import { NextArrow, PrevArrow } from '../../UI/SliderArrow'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
+import { useReviewsStore } from '@/src/store/reviews.store'
 
 function ReviewsSlider() {
+	const { reviews } = useReviewsStore()
 	const settings: Settings = {
 		infinite: true,
 		slidesToShow: 3,
@@ -22,7 +24,7 @@ function ReviewsSlider() {
 	return (
 		<div className='slider-container'>
 			<Slider {...settings}>
-				{REVIEWS_ITEMS.map(review => (
+				{reviews.map(review => (
 					<ReviewCard
 						key={review.id}
 						id={review.id}

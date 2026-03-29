@@ -7,13 +7,14 @@ import {
 } from '../validators/contact-form.schema'
 import { zodResolver } from '@hookform/resolvers/zod'
 import Input from '../UI/Input'
+import { cn } from '@/lib/utils'
 
 const ContactForm = () => {
 	const {
 		register,
 		handleSubmit,
-		formState: { errors, isSubmitting },
-		reset
+		reset,
+		formState: { errors, isSubmitting }
 	} = useForm<ContactFormType>({
 		resolver: zodResolver(contactFormSchema),
 		mode: 'onBlur'
@@ -57,13 +58,14 @@ const ContactForm = () => {
 				<textarea
 					{...register('message')}
 					placeholder='Як ми можемо вам допомогти?'
-					className={`
-              bg-zinc-900 text-white p-4 border-b-2 border-zinc-800 
-              outline-none transition-all duration-300 min-h-37.5 resize-none
-              focus:border-[#e8a21a] focus:bg-zinc-800/50
-							placeholder:text-zinc-600
-              ${errors.message ? 'border-red-500/50' : ''}
-            `}
+					className={cn(
+						'bg-zinc-900 text-white p-4 border-b-2 border-zinc-800 outline-none transition-all duration-300 min-h-37.5 resize-none',
+						'focus:border-[#e8a21a] focus:bg-zinc-800/50 placeholder:text-zinc-600',
+						{
+							'border-red-500/50': errors.message,
+							'focus:border-red-500': errors.message
+						}
+					)}
 				/>
 				{errors.message && (
 					<span className='text-red-500 text-[10px] uppercase mt-1'>
